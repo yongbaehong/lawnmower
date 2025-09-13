@@ -1,0 +1,8 @@
+#logo-text {
+  color: var(--main);
+}
+
+nav {
+  /* background: var(--contrast); */
+  color: var(--main);
+}
