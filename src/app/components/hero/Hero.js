@@ -3,12 +3,8 @@ import * as motion from 'motion/react-client'
 import './Hero.css'
 
 export default function Hero() {
-  const heroImageUrl = 'A1-logo.jpg'
-  const heroImageUrl2 = './stock-photo/istockphoto-165831199-612x612.jpg' // IGNORE
-  const heroImageUrl3 = './stock-photo/tekton-FuS7lYI8dNE-unsplash.jpg' // IGNORE
-  const heroImageUrl4 =
-    './stock-photo/roger-starnes-sr-8Kk5C2FLCV0-unsplash.jpg' // IGNORE
-  const heroImageUrl5 = './stock-photo/ryan-nicoll-Su0SedcyOkQ-unsplash.jpg' // IGNORE
+  const heroImageUrl4 = './stock-photo/pexels-public-domain-pictures-41324.jpg' // IGNORE
+  const heroImageUrl5 = './stock-photo/pexels-fox-58267-212324.jpg' // IGNORE
   return (
     <div
       style={{ backgroundImage: `url(${heroImageUrl5})` }}
@@ -16,7 +12,6 @@ export default function Hero() {
     >
       <div className="rounded-xl px-8 py-2 text-center">
         <div className="relative">
-          {/* <img src="" width={175} height={175} /> */}
           <motion.h1
             className="archivo-font text-5xl font-extrabold text-zinc-50 text-shadow-lg/35 md:text-6xl lg:text-7xl"
             initial={{ opacity: 0, y: 20 }}
@@ -24,10 +19,8 @@ export default function Hero() {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            {/* <h1 className="text-5xl font-extrabold text-zinc-50 text-shadow-lg/35 md:text-6xl lg:text-7xl"> */}
             Fast, Reliable Lawnmower
             <br /> Repair & Maintenance
-            {/* </h1> */}
           </motion.h1>
         </div>
       </div>

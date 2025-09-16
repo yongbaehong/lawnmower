@@ -39,7 +39,6 @@ export default function Home() {
       </FadeInYAxis>
 
       <section className="mx-auto mt-20 max-w-screen-lg">
-        {/* Coraousel */}
         <Carousel />
       </section>
 
@@ -55,7 +54,6 @@ export default function Home() {
       </FadeInYAxis>
 
       <div>
-        {/* <Parallax /> */}
         <Parallax
           height="100vh"
           layers={[
@@ -118,7 +116,6 @@ export default function Home() {
           ]}
         />
       </div>
-      {/* Contact */}
       <section className="mx-auto mt-20 mb-20 max-w-screen-lg">
         <motion.h3
           // initial={{ opacity: 0, y: 20, scale: 1.5 }}
