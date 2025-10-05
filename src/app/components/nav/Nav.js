@@ -22,20 +22,13 @@ export default function Nav() {
     return
   }
   return (
-    <nav className="sticky top-0 z-10 flex bg-[var(--background)] shadow-md">
+    <nav className="fixed top-0 z-10 flex w-full bg-[var(--background)] shadow-md">
       <div className="flex items-center gap-2 p-2">
-        {/* <img
-          src="./A1-logo.jpg"
-          width="75"
-          className="rounded-full"
-          alt="Logo"
-        /> */}
         <div id="logo-text" className="pl-3 text-2xl font-bold">
           <div>
             <span className="text-[var(--accent)]">A1</span>{' '}
             <span>Lawn Mower</span>
           </div>
-          {/* <div className="text-sm text-[var(--highlight)]">Shop & Repair</div> */}
         </div>
       </div>
       {/* mobile nav */}
@@ -54,36 +47,40 @@ export default function Nav() {
           <div className="mt-1 h-1 w-8 cursor-pointer rounded-full bg-[var(--main)] opacity-100 transition-all group-open:opacity-0"></div>
           <div className="relative top-0 mt-1 h-1 w-8 cursor-pointer rounded-full bg-[var(--main)] transition-all group-open:-top-2 group-open:-rotate-45"></div>
         </button>
+
         {/* mobile nav items */}
         <div className="absolute top-[calc(47px)] left-0 hidden w-full bg-[var(--background)] font-semibold text-[var(--neutral)] transition-all ease-in-out peer-open:block">
           <div className="relative flex h-full cursor-pointer items-center justify-center p-4 hover:bg-white/10 hover:text-[var(--neutral)]">
-            <span className="text-transform: uppercase">Home</span>
+            <Link href="#Home" className="text-transform: uppercase">
+              Home
+            </Link>
           </div>
           <div className="group relative h-full cursor-pointer">
-            <div className="text-transform: p-4 text-center uppercase hover:bg-white/10 hover:text-[var(--neutral)]">
+            <Link
+              href="#Services"
+              className="text-transform: p-4 text-center uppercase hover:bg-white/10 hover:text-[var(--neutral)]"
+            >
               Services
-            </div>
+            </Link>
           </div>
           <div className="relative flex h-full cursor-pointer items-center justify-center p-4 hover:bg-white/10 hover:text-[var(--neutral)]">
-            <span className="text-transform: uppercase">Contact</span>
+            <Link href="#Contact" className="text-transform: uppercase">
+              Contact
+            </Link>
           </div>
           <div className="relative flex h-full cursor-pointer items-center justify-center p-4 hover:bg-white/10 hover:text-[var(--neutral)]">
-            <span className="text-transform: uppercase">About</span>
+            <Link href="#About" className="text-transform: uppercase">
+              About
+            </Link>
           </div>
         </div>
       </div>
       {/* desktop/tablet nav items */}
       <ul className="hidden flex-1 items-center justify-end md:flex">
-        <NavItem href="/" text="Home" />
-        <NavItem href="/" text="Services">
-          {/* <Submenu>
-            <SubItem href="/service1" text="Service 1" />
-            <SubItem href="/service2" text="Service 2" />
-            <SubItem href="/service3" text="Service 3" />
-          </Submenu> */}
-        </NavItem>
-        <NavItem href="/" text="Contact" />
-        <NavItem href="/" text="About" />
+        <NavItem href="#Home" text="Home" />
+        <NavItem href="#Services" text="Services" />
+        <NavItem href="#Contact" text="Contact" />
+        <NavItem href="#About" text="About" />
       </ul>
     </nav>
   )

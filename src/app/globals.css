@@ -2,6 +2,9 @@
 @import 'tailwindcss';
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     font-optical-sizing: auto;
     font-weight: 300;

@@ -30,7 +30,7 @@ export const FadeInYAxis = ({
       initial={{ opacity: 0, visible: 'hidden' }}
       animate={inView ? 'visible' : 'hidden'}
       variants={variants}
-      className="mx-auto my-16 w-full max-w-screen-lg rounded-2xl bg-white p-8 shadow-xl"
+      className="mx-auto my-5 w-full max-w-screen-lg rounded-2xl bg-white p-8 shadow-xl"
     >
       {children}
     </motion.section>
