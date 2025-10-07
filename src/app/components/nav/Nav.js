@@ -50,26 +50,39 @@ export default function Nav() {
 
         {/* mobile nav items */}
         <div className="absolute top-[calc(47px)] left-0 hidden w-full bg-[var(--background)] font-semibold text-[var(--neutral)] transition-all ease-in-out peer-open:block">
-          <div className="relative flex h-full cursor-pointer items-center justify-center p-4 hover:bg-white/10 hover:text-[var(--neutral)]">
-            <Link href="#Home" className="text-transform: uppercase">
+          <div className="relative flex h-full cursor-pointer items-center justify-center pb-4 hover:bg-white/10 hover:text-[var(--neutral)]">
+            <Link
+              onClick={handleMobileMenuToggle}
+              href="#Home"
+              className="text-transform: uppercase"
+            >
               Home
             </Link>
           </div>
-          <div className="group relative h-full cursor-pointer">
+          <div className="relative flex h-full cursor-pointer items-center justify-center pb-4 hover:bg-white/10 hover:text-[var(--neutral)]">
             <Link
+              onClick={handleMobileMenuToggle}
               href="#Services"
-              className="text-transform: p-4 text-center uppercase hover:bg-white/10 hover:text-[var(--neutral)]"
+              className="text-transform: text-center uppercase hover:bg-white/10 hover:text-[var(--neutral)]"
             >
               Services
             </Link>
           </div>
-          <div className="relative flex h-full cursor-pointer items-center justify-center p-4 hover:bg-white/10 hover:text-[var(--neutral)]">
-            <Link href="#Contact" className="text-transform: uppercase">
+          <div className="relative flex h-full cursor-pointer items-center justify-center pb-4 hover:bg-white/10 hover:text-[var(--neutral)]">
+            <Link
+              onClick={handleMobileMenuToggle}
+              href="#Contact"
+              className="text-transform: uppercase"
+            >
               Contact
             </Link>
           </div>
-          <div className="relative flex h-full cursor-pointer items-center justify-center p-4 hover:bg-white/10 hover:text-[var(--neutral)]">
-            <Link href="#About" className="text-transform: uppercase">
+          <div className="relative flex h-full cursor-pointer items-center justify-center pb-4 hover:bg-white/10 hover:text-[var(--neutral)]">
+            <Link
+              onClick={handleMobileMenuToggle}
+              href="#About"
+              className="text-transform: uppercase"
+            >
               About
             </Link>
           </div>
