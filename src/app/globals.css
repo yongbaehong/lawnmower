@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Tenor+Sans&display=swap');
+@import 'tailwindcss';
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+  h1 {
+    @apply text-6xl font-bold;
+  }
+  h2 {
+    @apply text-5xl font-bold;
+  }
+  h3 {
+    @apply text-4xl font-bold;
+  }
+  h4 {
+    @apply text-3xl font-bold;
+  }
+  h5 {
+    @apply text-2xl font-bold;
+  }
+  h6 {
+    @apply text-xl font-bold;
+  }
+}
+
+@layer components {
+  .menu-item {
+    @apply relative flex h-full cursor-pointer items-center p-4 font-semibold transition-colors ease-in-out hover:bg-[var(--neutral)]/5 hover:text-[var(--neutral)];
+  }
+}
+
+@custom-variant group-open {
+  &:is(:where(.group):is(.open, [open], :popover-open, :open) *) {
+    @slot;
+  }
+}
+
+@custom-variant peer-open {
+  &:is(:where(.peer):is(.open, [open], :popover-open, :open) ~ *) {
+    @slot;
+  }
+}
+
+:root {
+  /* --background: #e6ecef;
+  --main: #1e3a8a;
+  --accent: #8b0000;
+  --contrast: #e6d7c4;
+  --highlight: #ffc107;
+  --neutral: #f5f7fa;
+  --foreground: #2b3a67; */
+  /* CSS HEX */
+  --main: #1e3a8aff;
+  --accent: #8b0000ff;
+  --highlight: #f6e27fff;
+  --contrast: #e2c391ff;
+  --foreground: #a8b7abff;
+  --background: hsl(240deg 6.67% 97.06%);
+
+  --gradient-right: linear-gradient(
+    90deg,
+    rgba(30, 58, 138, 1) 0%,
+    rgba(139, 0, 0, 1) 100%
+  );
+
+  /* --font-geist-sans:
+    'Geist Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+  --font-geist-mono:
+    'Geist Mono', 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace; */
+}
+
+@theme inline {
+  --color-background: var(--contrast);
+  --color-foreground: var(--contrast);
+  /* font-family: 'Noto Sans', sans-serif; */
+  /* --font-sans: var(--font-geist-sans); */
+  /* --font-mono: var(--font-geist-mono); */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* --background: #0a0a0a; */
+    --foreground: #ededed;
+  }
+}
+
+/* h1 */
+.archivo-font {
+  font-family: 'Archivo Narrow', sans-serif;
+  /* font-optical-sizing: auto; */
+  /* font-weight: 500; */
+  /* font-style: bold; */
+}
+
+/* h3 */
+.tenor-font {
+  font-family: 'Tenor Sans', sans-serif;
+  font-optical-sizing: auto;
+}
+
+body {
+  background: var(--foreground);
+  color: var(--main);
+  font-family: 'Tenor Sans', sans-serif;
+}
