@@ -25,17 +25,15 @@ export default function Home() {
 
       <section id="" className="mx-auto mt-10 mb-20 max-w-screen-lg">
         <h3 className="chivo-font text-center">Come Check Out The Store</h3>
-        <FadeInYAxis delay={0} thresholdPercentage={0} dirAmount={100}>
-          <p className="mx-2 mb-6 sm:px-2 md:px-8">
-            Your number one source for all things lawn mower repair and
-            maintenance. People have been coming to us for over 15 years. We are
-            a family owned and operated business. We are here to help you with
-            all your lawn care needs. We have a wide variety of parts and
-            accessories. We also offer repair services. We are here to help you
-            get your lawn equipment running like new again. We look forward to
-            seeing you in the store!
-          </p>
-        </FadeInYAxis>
+        <p className="mx-2 mb-6 sm:px-2 md:px-8">
+          Your number one source for all things lawn mower repair and
+          maintenance. People have been coming to us for over 15 years. We are a
+          family owned and operated business. We are here to help you with all
+          your lawn care needs. We have a wide variety of parts and accessories.
+          We also offer repair services. We are here to help you get your lawn
+          equipment running like new again. We look forward to seeing you in the
+          store!
+        </p>
       </section>
 
       <section className="mx-auto mt-20 max-w-screen-lg">
@@ -46,16 +44,144 @@ export default function Home() {
 
       <section id="Services" className="mx-auto mt-10 mb-20 max-w-screen-lg">
         <h3 className="chivo-font pt-20 text-center">Our Services</h3>
-        <FadeInYAxis delay={0} thresholdPercentage={0} dirAmount={100}>
-          <p className="mx-2 mb-6 sm:px-2 md:px-8">
-            We offer a wide range of services to keep your lawn equipment
-            running smoothly. From routine maintenance to complex repairs, our
-            skilled technician is here to help. We service all major brands and
-            models, ensuring that your equipment is in good hands. Contact us
-            today to schedule a service appointment or to learn more about our
-            offerings.
-          </p>
-        </FadeInYAxis>
+        <p className="mx-2 mb-6 sm:px-2 md:px-8">
+          We offer a wide range of services to keep your lawn equipment running
+          smoothly. From routine maintenance to complex repairs, our skilled
+          technician is here to help. We service all major brands and models,
+          ensuring that your equipment is in good hands. Contact us today to
+          schedule a service appointment or to learn more about our offerings.
+        </p>
+        {/* <div className="flex"> */}
+        <div class="grid grid-cols-8 gap-2 p-5">
+          {/* card 1 */}
+          <div class="bg-opacity-50 backdrop-blur-20 col-span-8 mt-5 cursor-pointer rounded border border-gray-100 bg-gradient-to-b from-gray-200 to-gray-50 shadow-lg md:col-span-4 lg:col-span-2">
+            <div class="py-3">
+              <div class="mt-1 mb-2 ml-4 flex flex-col">
+                <h6 class="text-center font-bold">Engine Tune-Ups</h6>
+              </div>
+            </div>
+
+            <div class="mx-3 my-2 flex justify-center px-2 text-5xl">
+              <FontAwesomeIcon icon="fa-solid fa-screwdriver-wrench" />
+            </div>
+
+            <div class="mb-5">
+              <div class="mx-5 mt-6 flex flex-wrap justify-start sm:justify-center">
+                <div class="mr-4 mb-2 flex text-center text-gray-900">
+                  Keep your engine running smoothly with our comprehensive
+                  tune-up services.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* card 2 */}
+          <div class="bg-opacity-50 backdrop-blur-20 col-span-8 mt-5 cursor-pointer rounded border border-gray-100 bg-gradient-to-b from-gray-200 to-gray-50 shadow-lg md:col-span-4 lg:col-span-2">
+            <div class="py-3">
+              <div class="mt-1 mb-2 ml-4 flex flex-col">
+                <h6 class="text-center font-bold">Blade Sharpening</h6>
+              </div>
+            </div>
+
+            <div class="mx-3 my-2 flex justify-center px-2 text-5xl">
+              <FontAwesomeIcon icon="fa-solid fa-fan" />
+            </div>
+
+            <div class="mb-5">
+              <div class="mx-5 mt-6 flex flex-wrap justify-start sm:justify-center">
+                <div class="mr-4 mb-2 flex text-center text-gray-900">
+                  A sharp blade means a healthier lawn. We provide professional
+                  sharpening and balancing services.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* card 3 */}
+          <div class="bg-opacity-50 backdrop-blur-20 col-span-8 mt-5 cursor-pointer rounded border border-gray-100 bg-gradient-to-b from-gray-200 to-gray-50 shadow-lg md:col-span-4 lg:col-span-2">
+            <div class="py-3">
+              <div class="mt-1 mb-2 ml-4 flex flex-col">
+                <h6 class="text-center font-bold">General Repairs</h6>
+              </div>
+            </div>
+
+            <div class="mx-3 my-2 flex justify-center px-2 text-5xl">
+              <FontAwesomeIcon icon="fa-solid fa-pen-to-square" />
+            </div>
+
+            <div class="mb-5">
+              <div class="mx-5 mt-6 flex flex-wrap justify-start sm:justify-center">
+                <div class="mr-4 mb-2 flex text-center text-gray-900">
+                  From broken pull-chords to engine issues, we diagnose and fix
+                  all common mower problems.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* card 4 */}
+          <div class="bg-opacity-50 backdrop-blur-20 col-span-8 mt-5 cursor-pointer rounded border border-gray-100 bg-gradient-to-b from-gray-200 to-gray-50 shadow-lg md:col-span-4 lg:col-span-2">
+            <div class="py-3">
+              <div class="mt-1 mb-2 ml-4 flex flex-col">
+                <h6 class="text-center font-bold">Winterization</h6>
+              </div>
+            </div>
+
+            <div class="mx-3 my-2 flex justify-center px-2 text-5xl">
+              <FontAwesomeIcon icon="fa-solid fa-snowflake" />
+            </div>
+
+            <div class="mb-5">
+              <div class="mx-5 mt-6 flex flex-wrap justify-start sm:justify-center">
+                <div class="mr-4 mb-2 flex text-center text-gray-900">
+                  Prepare your mower for the off-season with our winterization
+                  services to ensure it's ready to go in spring.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* <FadeInYAxis delay={0} thresholdPercentage={0} dirAmount={100}>
+            <div>
+              <div className="text-3xl">
+                <FontAwesomeIcon icon="fa-solid fa-cog" />
+              </div>
+              <h3>Engine Tune-Ups</h3>
+              <p>
+                Keep your engine running smoothly with our comprehensive tune-up
+                services.
+              </p>
+            </div>
+          </FadeInYAxis>
+          <FadeInYAxis delay={0} thresholdPercentage={0} dirAmount={100}>
+            <div>
+              <h3>Engine Tune-Ups</h3>
+              <p>
+                Keep your engine running smoothly with our comprehensive tune-up
+                services.
+              </p>
+            </div>
+          </FadeInYAxis>
+          <FadeInYAxis delay={0} thresholdPercentage={0} dirAmount={100}>
+            <div>
+              <h3>Engine Tune-Ups</h3>
+              <p>
+                Keep your engine running smoothly with our comprehensive tune-up
+                services.
+              </p>
+            </div>
+          </FadeInYAxis>
+          <FadeInYAxis delay={0} thresholdPercentage={0} dirAmount={100}>
+            <div>
+              <h3>Engine Tune-Ups</h3>
+              <p>
+                Keep your engine running smoothly with our comprehensive tune-up
+                services.
+              </p>
+            </div>
+          </FadeInYAxis> */}
+        {/* </div> */}
       </section>
 
       {/* Reviews Section */}
