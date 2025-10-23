@@ -52,22 +52,22 @@ export default function Home() {
           schedule a service appointment or to learn more about our offerings.
         </p>
         {/* <div className="flex"> */}
-        <div class="grid grid-cols-8 gap-2 p-5">
+        <div className="grid grid-cols-8 gap-2 p-5">
           {/* card 1 */}
-          <div class="bg-opacity-50 backdrop-blur-20 col-span-8 mt-5 cursor-pointer rounded border border-gray-100 bg-gradient-to-b from-gray-200 to-gray-50 shadow-lg md:col-span-4 lg:col-span-2">
-            <div class="py-3">
-              <div class="mt-1 mb-2 ml-4 flex flex-col">
-                <h6 class="text-center font-bold">Engine Tune-Ups</h6>
+          <div className="bg-opacity-50 backdrop-blur-20 col-span-8 mt-5 cursor-pointer rounded border border-gray-100 bg-gradient-to-b from-gray-200 to-gray-50 shadow-lg md:col-span-4 lg:col-span-2">
+            <div className="py-3">
+              <div className="mt-1 mb-2 ml-4 flex flex-col">
+                <h6 className="text-center font-bold">Engine Tune-Ups</h6>
               </div>
             </div>
 
-            <div class="mx-3 my-2 flex justify-center px-2 text-5xl">
+            <div className="mx-3 my-2 flex justify-center px-2 text-5xl">
               <FontAwesomeIcon icon="fa-solid fa-screwdriver-wrench" />
             </div>
 
-            <div class="mb-5">
-              <div class="mx-5 mt-6 flex flex-wrap justify-start sm:justify-center">
-                <div class="mr-4 mb-2 flex text-center text-gray-900">
+            <div className="mb-5">
+              <div className="mx-5 mt-6 flex flex-wrap justify-start sm:justify-center">
+                <div className="mr-4 mb-2 flex text-center text-gray-900">
                   Keep your engine running smoothly with our comprehensive
                   tune-up services.
                 </div>
@@ -76,20 +76,20 @@ export default function Home() {
           </div>
 
           {/* card 2 */}
-          <div class="bg-opacity-50 backdrop-blur-20 col-span-8 mt-5 cursor-pointer rounded border border-gray-100 bg-gradient-to-b from-gray-200 to-gray-50 shadow-lg md:col-span-4 lg:col-span-2">
-            <div class="py-3">
-              <div class="mt-1 mb-2 ml-4 flex flex-col">
-                <h6 class="text-center font-bold">Blade Sharpening</h6>
+          <div className="bg-opacity-50 backdrop-blur-20 col-span-8 mt-5 cursor-pointer rounded border border-gray-100 bg-gradient-to-b from-gray-200 to-gray-50 shadow-lg md:col-span-4 lg:col-span-2">
+            <div className="py-3">
+              <div className="mt-1 mb-2 ml-4 flex flex-col">
+                <h6 className="text-center font-bold">Blade Sharpening</h6>
               </div>
             </div>
 
-            <div class="mx-3 my-2 flex justify-center px-2 text-5xl">
+            <div className="mx-3 my-2 flex justify-center px-2 text-5xl">
               <FontAwesomeIcon icon="fa-solid fa-fan" />
             </div>
 
-            <div class="mb-5">
-              <div class="mx-5 mt-6 flex flex-wrap justify-start sm:justify-center">
-                <div class="mr-4 mb-2 flex text-center text-gray-900">
+            <div className="mb-5">
+              <div className="mx-5 mt-6 flex flex-wrap justify-start sm:justify-center">
+                <div className="mr-4 mb-2 flex text-center text-gray-900">
                   A sharp blade means a healthier lawn. We provide professional
                   sharpening and balancing services.
                 </div>
@@ -98,20 +98,20 @@ export default function Home() {
           </div>
 
           {/* card 3 */}
-          <div class="bg-opacity-50 backdrop-blur-20 col-span-8 mt-5 cursor-pointer rounded border border-gray-100 bg-gradient-to-b from-gray-200 to-gray-50 shadow-lg md:col-span-4 lg:col-span-2">
-            <div class="py-3">
-              <div class="mt-1 mb-2 ml-4 flex flex-col">
-                <h6 class="text-center font-bold">General Repairs</h6>
+          <div className="bg-opacity-50 backdrop-blur-20 col-span-8 mt-5 cursor-pointer rounded border border-gray-100 bg-gradient-to-b from-gray-200 to-gray-50 shadow-lg md:col-span-4 lg:col-span-2">
+            <div className="py-3">
+              <div className="mt-1 mb-2 ml-4 flex flex-col">
+                <h6 className="text-center font-bold">General Repairs</h6>
               </div>
             </div>
 
-            <div class="mx-3 my-2 flex justify-center px-2 text-5xl">
+            <div className="mx-3 my-2 flex justify-center px-2 text-5xl">
               <FontAwesomeIcon icon="fa-solid fa-pen-to-square" />
             </div>
 
-            <div class="mb-5">
-              <div class="mx-5 mt-6 flex flex-wrap justify-start sm:justify-center">
-                <div class="mr-4 mb-2 flex text-center text-gray-900">
+            <div className="mb-5">
+              <div className="mx-5 mt-6 flex flex-wrap justify-start sm:justify-center">
+                <div className="mr-4 mb-2 flex text-center text-gray-900">
                   From broken pull-chords to engine issues, we diagnose and fix
                   all common mower problems.
                 </div>
@@ -120,20 +120,20 @@ export default function Home() {
           </div>
 
           {/* card 4 */}
-          <div class="bg-opacity-50 backdrop-blur-20 col-span-8 mt-5 cursor-pointer rounded border border-gray-100 bg-gradient-to-b from-gray-200 to-gray-50 shadow-lg md:col-span-4 lg:col-span-2">
-            <div class="py-3">
-              <div class="mt-1 mb-2 ml-4 flex flex-col">
-                <h6 class="text-center font-bold">Winterization</h6>
+          <div className="bg-opacity-50 backdrop-blur-20 col-span-8 mt-5 cursor-pointer rounded border border-gray-100 bg-gradient-to-b from-gray-200 to-gray-50 shadow-lg md:col-span-4 lg:col-span-2">
+            <div className="py-3">
+              <div className="mt-1 mb-2 ml-4 flex flex-col">
+                <h6 className="text-center font-bold">Winterization</h6>
               </div>
             </div>
 
-            <div class="mx-3 my-2 flex justify-center px-2 text-5xl">
+            <div className="mx-3 my-2 flex justify-center px-2 text-5xl">
               <FontAwesomeIcon icon="fa-solid fa-snowflake" />
             </div>
 
-            <div class="mb-5">
-              <div class="mx-5 mt-6 flex flex-wrap justify-start sm:justify-center">
-                <div class="mr-4 mb-2 flex text-center text-gray-900">
+            <div className="mb-5">
+              <div className="mx-5 mt-6 flex flex-wrap justify-start sm:justify-center">
+                <div className="mr-4 mb-2 flex text-center text-gray-900">
                   Prepare your mower for the off-season with our winterization
                   services to ensure it's ready to go in spring.
                 </div>
@@ -141,47 +141,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        {/* <FadeInYAxis delay={0} thresholdPercentage={0} dirAmount={100}>
-            <div>
-              <div className="text-3xl">
-                <FontAwesomeIcon icon="fa-solid fa-cog" />
-              </div>
-              <h3>Engine Tune-Ups</h3>
-              <p>
-                Keep your engine running smoothly with our comprehensive tune-up
-                services.
-              </p>
-            </div>
-          </FadeInYAxis>
-          <FadeInYAxis delay={0} thresholdPercentage={0} dirAmount={100}>
-            <div>
-              <h3>Engine Tune-Ups</h3>
-              <p>
-                Keep your engine running smoothly with our comprehensive tune-up
-                services.
-              </p>
-            </div>
-          </FadeInYAxis>
-          <FadeInYAxis delay={0} thresholdPercentage={0} dirAmount={100}>
-            <div>
-              <h3>Engine Tune-Ups</h3>
-              <p>
-                Keep your engine running smoothly with our comprehensive tune-up
-                services.
-              </p>
-            </div>
-          </FadeInYAxis>
-          <FadeInYAxis delay={0} thresholdPercentage={0} dirAmount={100}>
-            <div>
-              <h3>Engine Tune-Ups</h3>
-              <p>
-                Keep your engine running smoothly with our comprehensive tune-up
-                services.
-              </p>
-            </div>
-          </FadeInYAxis> */}
-        {/* </div> */}
       </section>
 
       {/* Reviews Section */}
