@@ -107,7 +107,11 @@
 }
 
 body {
-  background: var(--foreground);
+  background: #fafafa;
   color: var(--main);
   font-family: 'Tenor Sans', sans-serif;
+}
+
+h3 {
+  color: var(--accent)
 }

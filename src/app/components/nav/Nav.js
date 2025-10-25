@@ -71,19 +71,19 @@ export default function Nav() {
           <div className="relative flex h-full cursor-pointer items-center justify-center pb-4 hover:bg-white/10 hover:text-[var(--neutral)]">
             <Link
               onClick={handleMobileMenuToggle}
-              href="#Contact"
+              href="#About"
               className="text-transform: uppercase"
             >
-              Contact
+              About
             </Link>
           </div>
           <div className="relative flex h-full cursor-pointer items-center justify-center pb-4 hover:bg-white/10 hover:text-[var(--neutral)]">
             <Link
               onClick={handleMobileMenuToggle}
-              href="#About"
+              href="#Contact"
               className="text-transform: uppercase"
             >
-              About
+              Contact
             </Link>
           </div>
         </div>
@@ -92,8 +92,8 @@ export default function Nav() {
       <ul className="hidden flex-1 items-center justify-end md:flex">
         <NavItem href="#Home" text="Home" />
         <NavItem href="#Services" text="Services" />
-        <NavItem href="#Contact" text="Contact" />
         <NavItem href="#About" text="About" />
+        <NavItem href="#Contact" text="Contact" />
       </ul>
     </nav>
   )
