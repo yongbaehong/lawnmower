@@ -28,7 +28,7 @@ export default function Carousel() {
     carouselRef.current.scrollLeft += itemWidth
   }
   return (
-    <div className="flex">
+    <div className="relative flex">
       <div
         id="previous"
         className="relative -top-8 flex items-center justify-center sm:p-0 sm:text-4xl md:p-3 md:text-5xl"
@@ -50,7 +50,7 @@ export default function Carousel() {
       <div
         ref={carouselRef}
         id="carousel"
-        className="mt-4 flex w-full flex-1 snap-x gap-4 overflow-x-auto scroll-smooth pb-5"
+        className="mt-4 flex w-full flex-1 snap-x gap-4 overflow-x-hidden scroll-smooth pb-5"
       >
         <CarouselItem
           img="istockphoto-165831199-612x612.jpg"
